@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>TrainTime</title>
+</head>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<body>
+    <div class="image">
+        <div class="container" id="head-cointainer">
+            <div class="jumbotron bg-danger text-black text-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/2180px-Harry_Potter_wordmark.svg.png"
+                    width=60%;>
+                <h4 class="display-6">Hogwarts Train Station</h4>
+            </div>
+        </div>
+
+        <div class='container'>
+            <div class='panel panel-default'>
+                <div class='panel-heading panel-custom text-white bg-primary'>
+                    Current Train Schedule
+                </div>
+                <table class='table table-hover' id='table-data'>
+                    <tr>
+                        <th scope='Col'>Train Name</th>
+                        <th scope='Col'>Destination</th>
+                        <th scope='Col'>Frequency</th>
+                        <th scope='Col'>Minutes Away</th>
+                        <th scope='Col'>Next Arrival</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class='panel panel-default'>
+                <div class="panel-heading panel-custom text-white bg-primary">
+                    Add Train
+                </div>
+                <div class='panel-body'>
+                    <form>
+                        <div class='form-group'>
+                            <label for="trainName">Train Name:</label>
+                            <input type="text" class='form-control' id='train-name' placeholder=TrainName>
+                        </div>
+                        <div class='form-group'>
+                            <label for='destination'>Destination:</label>
+                            <input type="text" class='form-control' id='train-destination' placeholder='Destination'>
+                        </div>
+                        <div class='form-group'>
+                            <label for='startYear'>First Train Time: (military time)</label>
+                            <input type="text" class='form-control' id='train-time' placeholder='FirstTrainTime'>
+                        </div>
+                        <div class='form-group'>
+                            <label for='endYear'>Frequency (minutes)</label>
+                            <input type="text" class='form-control' id='time-freq' placeholder='Frequency'>
+                        </div>
+
+                        <button type='submit' class='btn btn-primary' id="btn-add">Submit</button>
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
