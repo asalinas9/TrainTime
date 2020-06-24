@@ -1,5 +1,7 @@
 # TrainTime
-https://asalinas9.github.io/TrainTime/
+
+[GitHub Page](https://asalinas9.github.io/TrainTime/)
+
 
 # Overview
 
