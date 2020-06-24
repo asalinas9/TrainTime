@@ -9,4 +9,9 @@ In this assignment, the objective was to create a train schedule application tha
 
 # Technologies Used
 
-Firebase, HTML, CSS, Javascript, jQuery, Bootstrap.
+1. _Firebase_. 
+2. _HTML.
+3. _CSS_.
+4. _Javascript_.
+5. _jQuery_.
+6. _Bootstrap_.
